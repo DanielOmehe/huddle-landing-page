@@ -57,6 +57,10 @@ body{
     cursor: pointer;
 }
 
+.huddle-landing-page-navbar button:hover{
+    opacity: .8;
+}
+
 .huddle-landing-page-items{
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -98,6 +102,10 @@ body{
     font-family: var(--secondary-font-family);
     box-shadow: 0 5px 10px rgba(172, 171, 171, 0.445);
     cursor: pointer;
+}
+
+.huddle-landing-page-text button:hover{
+    opacity: .8;
 }
 
 .huddle-landing-page-image{
@@ -219,6 +227,10 @@ body{
     font-weight: 600;
 }
 
+.huddle-page-community button:hover{
+    opacity: .8;
+}
+
 .huddle-landing-page-footer{
     width: 100%;
     background-color: var(--color-very-dark-cyan);
@@ -267,8 +279,13 @@ body{
 .huddle-footer-links{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 30px);
-    gap: 1rem 5rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "about career"
+    "what blog"
+    "faq contact"
+    ;
+    gap: 2rem 5rem;
 }
 
 .huddle-footer-links li{
@@ -277,9 +294,48 @@ body{
     font-size: var(--font-size);
 }
 
+.huddle-footer-links li:nth-child(1) a{
+    grid-area: "about";
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.huddle-footer-links li:nth-child(2) a{
+    grid-area: "what";
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.huddle-footer-links li:nth-child(3) a{
+    grid-area: "faq";
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.huddle-footer-links li:nth-child(4) a{
+    grid-area: "career";
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.huddle-footer-links li:nth-child(5) a{
+    grid-area: "blog";
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.huddle-footer-links li:nth-child(6) a{
+    grid-area: "contact";
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
 .huddle-footer-links li a{
     text-decoration: none;
     color: var(--color-very-pale-cyan);
+}
+
+.huddle-footer-links li a:hover{
+    text-decoration: underline;
 }
 
 .huddle-footer-social-icons{
@@ -298,6 +354,30 @@ body{
     border-radius: 50%;
     border: 1px solid var(--color-very-pale-cyan);
 }
+
+.social-icon:hover{
+    border: 1px solid var(--color-pink);
+}
+
+/* .social-icon:nth-child(1):hover svg{
+    fill: var(--color-pink);
+}
+
+.social-icon:nth-child(2):hover svg{
+    fill: var(--color-pink);
+}
+
+.social-icon:nth-child(3):hover svg{
+    fill: var(--color-pink);
+}
+
+a.social-icon:hover svg{
+    fill: var(--color-pink);
+}
+
+.social-icon:hover svg{
+    fill: var(--color-pink);
+} */
 
 .footer-copyright{
     text-align: right;
