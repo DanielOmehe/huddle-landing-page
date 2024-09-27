@@ -378,12 +378,13 @@ body {
   }
 
   .huddle-landing-page-navbar img {
-    width: 65%;
+    width: 70%;
+    height: 100%;
   }
 
   .huddle-landing-page-navbar button {
     font-size: 0.8rem;
-    width: 180px;
+    width: 160px;
     padding: 0.6rem 1rem;
     font-weight: 700;
   }
