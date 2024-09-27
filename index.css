@@ -1,0 +1,306 @@
+:root{
+
+    --color-pink: hsl(322, 100%, 66%);
+    --color-very-pale-cyan: hsl(193, 100%, 96%);
+    --color-very-dark-cyan: hsl(192, 100%, 9%);
+    --color-grayish-blue: hsl(208, 11%, 55%);
+
+    --font-size: 18px;
+    
+    --primary-font-family: "Poppins", sans-serif;
+    --secondary-font-family: "Open Sans", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--secondary-font-family);
+}
+
+body{
+    background-color: white;
+}
+
+.huddle-landing-page-header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: var(--color-very-pale-cyan);
+    padding: 3rem 6rem;
+}
+
+.huddle-landing-page-header-content{
+    width: 100%;
+}
+
+.huddle-landing-page-navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.huddle-landing-page-navbar button{
+    width: 200px;
+    padding: 1rem 0;
+    border-radius: 50px;
+    background-color: #fff;
+    color: var(--color-very-dark-cyan);
+    font-size: var(--font-size);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(172, 171, 171, 0.445);
+    cursor: pointer;
+}
+
+.huddle-landing-page-items{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 70vh;
+    align-items: center;
+    gap: 6rem;
+}
+
+.huddle-landing-page-text{
+    grid-column: 1 / 2;
+}
+
+.huddle-landing-page-text h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    color: var(--color-very-dark-cyan);
+    font-family: var(--primary-font-family);
+    margin-bottom: 2rem;
+}
+
+.huddle-landing-page-text p{
+    font-size: var(--font-size);
+    color: var(--color-very-dark-cyan);
+    margin-bottom: 2rem;
+    font-family: var(--secondary-font-family);
+}
+
+.huddle-landing-page-text button{
+    width: 60%;
+    padding: 1rem;
+    background-color: var(--color-pink);
+    border-radius: 50px;
+    color: var(--color-very-pale-cyan);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--secondary-font-family);
+    box-shadow: 0 5px 10px rgba(172, 171, 171, 0.445);
+    cursor: pointer;
+}
+
+.huddle-landing-page-image{
+    grid-column: 2 / 3;
+}
+
+.huddle-landing-page-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.huddle-landing-page-content{
+    padding: 4rem 6rem 20rem;
+    position: relative;
+}
+
+.huddle-page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55vh;
+    align-items: center;
+    padding: 2rem 2rem 2rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(180, 179, 179, 0.349);
+    margin-bottom: 3rem;
+    gap: 6rem;
+}
+
+.huddle-page-content.flowing  .huddle-content-section-left{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.huddle-page-content.flowing .huddle-content-section-right{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.huddle-content-section-left h2{
+    font-size: 2.5rem;
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-very-dark-cyan);
+}
+
+.huddle-content-section-left p{
+    font-size: var(--font-size);
+    font-family: var(--secondary-font-family);
+    color: var(--color-very-dark-cyan);
+    padding-right: 5rem;
+}
+
+.huddle-content-section-left h2{
+    font-size: 2.5rem;
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-very-dark-cyan);
+}
+
+.huddle-page-content.flowing .huddle-content-section-left p{
+    font-size: var(--font-size);
+    font-family: var(--secondary-font-family);
+    color: var(--color-very-dark-cyan);
+    padding-right: 2rem;
+}
+
+.huddle-content-section-right{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.huddle-content-section-right img{
+    width: 90%;
+    height: 95%;
+}
+
+.huddle-page-community{
+    width: 60%;
+    height: fit-content;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 20%;
+    bottom: -8rem;
+    box-shadow: 0 0 15px rgba(180, 179, 179, 0.349);
+}
+
+.huddle-page-community h2{
+    font-size: 2rem;
+    font-family: var(--primary-font-family);
+    color: var(--color-very-dark-cyan);
+    margin-bottom: 2rem;
+}
+
+.huddle-page-community button{
+    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    color: var(--color-very-dark-cyan);
+    margin-bottom: 2rem;
+    width: 50%;
+    padding: 1.5rem;
+    font-size: var(--font-size);
+    border-radius: 50px;
+    background-color: var(--color-pink);
+    color: var(--color-very-pale-cyan);
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(172, 171, 171, 0.445);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.huddle-landing-page-footer{
+    width: 100%;
+    background-color: var(--color-very-dark-cyan);
+    padding: 15rem 6rem 4rem;
+}
+
+.huddle-landing-page-footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 10%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 8rem;
+}
+
+.huddle-footer-logo-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.huddle-footer-logo img{
+    margin-bottom: 2rem;
+}
+
+.huddle-contact{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.huddle-contact p{
+    color: var(--color-very-pale-cyan);
+}
+
+.huddle-contact.location{
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.huddle-contact.location img{
+    margin-top: .6rem;
+}
+
+.huddle-footer-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 30px);
+    gap: 1rem 5rem;
+}
+
+.huddle-footer-links li{
+    list-style: none;
+    font-family: var(--secondary-font-family);
+    font-size: var(--font-size);
+}
+
+.huddle-footer-links li a{
+    text-decoration: none;
+    color: var(--color-very-pale-cyan);
+}
+
+.huddle-footer-social-icons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-very-pale-cyan);
+}
+
+.footer-copyright{
+    text-align: right;
+    color: var(--color-very-pale-cyan);
+    font-size: .8rem;
+}
