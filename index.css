@@ -385,7 +385,7 @@ body {
 
   .huddle-landing-page-navbar button {
     font-size: 0.8rem;
-    width: 250px;
+    width: 280px;
     padding: 0.6rem 1rem;
     font-weight: 700;
     width: fit-content;
@@ -428,7 +428,7 @@ body {
 
   .huddle-page-content {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 220px 1fr;
     padding: 0;
     text-align: center;
     padding: 2rem;
